@@ -12,11 +12,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
-    private val url1 = "https://dl.mp3flowers.ir/wp-content/uploads/2021/03/Masked%20Wolf%20" +
-            "-%20Astronaut%20In%20The%20Ocean.mp3"
-    private val url2 = "http://www.appsapk.com/downloading/latest/WeChat-6.5.7.apk";
-    private val url3 = "https://media.giphy.com/media/Bk0CW5frw4qfS/giphy.gif"
-    private val url4 = "http://techslides.com/demos/sample-videos/small.mp4"
+    private val url1 = "https://cdna.p30download.ir/p30dl-audio/Naser.Cheshmazar.Music.Passion.of.Love.Mp3.128kbps_p30download.com.mp3"
+    private val url2 = "https://cdna.p30download.ir/p30dl-ebook/Click.736-1398.10.01_p30download.com.zip";
+    private val url3 = "https://cdna.p30download.ir/p30dl-ebook/Byte.473-1396.05.25_p30download.com.zip"
+    private val url4 = "https://cdna.p30download.ir/p30dl-audio/Naser.Cheshmazar.Music.My.Mother.Mp3.128kbps_p30download.com.mp3"
 
     companion object {
         lateinit var dirPath: String
@@ -52,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 EFDownloader.resume(downloadId1)
                 return@OnClickListener
             }
-            downloadId1 = EFDownloader.download(url1, dirPath, "music.mp3")
+            downloadId1 = EFDownloader.download(url1, dirPath, "Passion")
                 .build()
                 .showNotification(this)
                 .setOnStartOrResumeListener(object : OnStartOrResumeListener {
@@ -135,7 +134,7 @@ class MainActivity : AppCompatActivity() {
                 EFDownloader.resume(downloadId2)
                 return@OnClickListener
             }
-            downloadId2 = EFDownloader.download(url2, dirPath, "wechat.apk")
+            downloadId2 = EFDownloader.download(url2, dirPath, "Click")
                 .build()
                 .showNotification(this)
                 .setOnStartOrResumeListener(object : OnStartOrResumeListener {
@@ -217,7 +216,7 @@ class MainActivity : AppCompatActivity() {
                 EFDownloader.resume(downloadId3)
                 return@OnClickListener
             }
-            downloadId3 = EFDownloader.download(url3, dirPath, "giphy.gif")
+            downloadId3 = EFDownloader.download(url3, dirPath, "Byte")
                 .build()
                 .showNotification(this)
                 .setOnStartOrResumeListener(object : OnStartOrResumeListener {
@@ -299,7 +298,7 @@ class MainActivity : AppCompatActivity() {
                 EFDownloader.resume(downloadId4)
                 return@OnClickListener
             }
-            downloadId4 = EFDownloader.download(url4, dirPath, "small.mp4")
+            downloadId4 = EFDownloader.download(url4, dirPath, "Mother")
                 .build()
                 .showNotification(this)
                 .setOnStartOrResumeListener(object : OnStartOrResumeListener {
