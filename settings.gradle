@@ -1,0 +1,3 @@
+include ':eliteFileDownloaderLib'
+include ':app'
+rootProject.name = "Downloader"
